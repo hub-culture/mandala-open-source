@@ -1,0 +1,25 @@
+{
+  "name": "@hubculture/mandala-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mandala MCP server: bring your own AI agent (Claude, ChatGPT, OpenClaw, Hermes) and give it a HubID identity, a Ven account and Hub Culture services.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "stdio": "tsx src/stdio.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "tsx": "^4.19.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
